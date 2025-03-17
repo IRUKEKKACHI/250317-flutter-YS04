@@ -6,6 +6,19 @@ allprojects {
 }
 
 rootProject.buildDir = "../build"
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
+
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
