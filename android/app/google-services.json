@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "117570462414",
+    "project_id": "flutter-ys04",
+    "storage_bucket": "flutter-ys04.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117570462414:android:02675f8cd7c4e90b41a69f",
+        "android_client_info": {
+          "package_name": "com.ydmins.flutter_ys04_20250317"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5PlrsoyOUf9YbRVq7695piUPxGIjJRRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
