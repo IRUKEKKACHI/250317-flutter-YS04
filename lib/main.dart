@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'package:flutter_ys04_20250317/screens/auth_screen.dart';
+import 'package:flutter_ys04_20250317/screens/home_screen.dart';
+import 'package:flutter_ys04_20250317/screens/onboarding_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const FlutterYS04());
 }
 
@@ -12,17 +21,12 @@ class FlutterYS04 extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter YS04',
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'Flutter YS04',
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ),
+      initialRoute: '/onboarding',
+      routes: {
+        '/onboarding': (context) => OnboardingScreen(),
+        '/auth': (context) => AuthScreen(),
+        '/home': (context) => HomeScreen(),
+      },
     );
   }
 }
