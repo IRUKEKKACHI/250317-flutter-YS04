@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'package:flutter_ys04_20250317/screens/auth_screen.dart';
-import 'package:flutter_ys04_20250317/screens/home_screen.dart';
-import 'package:flutter_ys04_20250317/screens/onboarding_screen.dart';
+import 'package:flutter_ys04_20250317/screen/auth_screen.dart';
+import 'package:flutter_ys04_20250317/screen/home_screen.dart';
+import 'package:flutter_ys04_20250317/screen/onboarding_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
